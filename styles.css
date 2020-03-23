@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+main{
+    margin: 0 auto;
+    max-width: 940px;
+}
+header{
+    margin: 30px 30px 30px 0px;
+    display: inline-flex;
+}
+.menu{
+    padding-left: 80px;
+}
+.menu a{
+    color: black;
+    display: inline;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.container{
+    max-width: 940px;
+    height: 366px;
+    background: #FBDFDB;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.texts h2{
+    font-size: 32px;
+    padding-bottom: 10px
+}
+.texts p{
+    width: 316px;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+.image_chef{
+     display: flex;
+     margin-left: 190px;
+     max-width: 940px;
+}
+.revenue_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+}
+.tittle_revenue{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.revenues img{
+    width: 300px;
+    height: 140px;
+    border-radius: 14px;
+}
+.revenues h3{
+    font-size: 18px;
+    line-height: 30px;
+}
+.revenues p{
+    font-size: 14px;
+}
+.footer{
+    margin-top: 40px;
+    height: 60px;
+    background: #EEEEEE;
+}
+.footer p{
+    padding-top: 20px;
+    text-align: center;
+    color: #999999;
+}
+.tittle_1 h1{
+    padding-bottom: 30px;
+}
+.tittle_1 p{
+    line-height: 28px;
+    word-wrap: break-word;
+}
+.p1{
+    padding-top: 30px;
+}
+.tittle_2 h1{
+    padding-top: 30px;
+}
+.tittle_2 p{
+    padding-top: 30px;
+    line-height: 28px;
+}
+.tittle_3 h1{
+    padding-top: 30px;
+}
+.tittle_3 p{
+    padding-top: 30px;
+    line-height: 28px;
+}
+.tittles{
+    text-align: left ;
+}
+.receitas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: white;
+    width: 50%;
+    height: 55%;
+    border-radius: 15px;
+    margin: 20vh auto;
+    position: relative;
+}
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content .img-modal{
+    border-radius: 15px;
+    position: absolute;
+    width: 35%;
+    height: 32%;
+    top: 25%;
+    left: 33%;
+}
+.modal-content .h3-modal{
+    text-align: center;
+    max-width: 940px;
+    position: absolute;
+    top: 61%;
+    left: 44%;
+}
+.modal-content .p-modal{
+    position: absolute;
+    top: 65%;
+    left: 46%;
+}
